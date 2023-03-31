@@ -183,6 +183,9 @@ img {
 /* ======================= Hero section ========================== */
 .hero-section {
   background-color: var(--dark-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
   /* display: flex; */
   padding-top: 188px;
   padding-bottom: 188px;
@@ -245,6 +248,20 @@ img {
 .about-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+
+.about-svg-wraper {
+  background: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+.about-svg {
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ======================= /About section ========================== */
 
 /* ======================= Work section ========================== */
@@ -289,6 +306,30 @@ img {
 .team-list-item .section-item-title,
 .team-list-item .section-item-text {
   text-align: center;
+}
+
+.team-social-list {
+  margin-top: 8px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-social-item {
+}
+
+.team-social-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.team-social-svg {
+  fill: var(--white-color);
 }
 
 /* ======================= /Team section ========================== */
@@ -354,7 +395,36 @@ img {
 }
 /* ======================= /Portfolio section ========================== */
 
+/* ======================= Customers section ========================== */
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customers-item {
+  flex-basis: 168px;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.customers-svg {
+  width: 104px;
+  height: 56px;
+}
+
+/* ======================= Customers section ========================== */
+
 /* ======================= Footer section ========================== */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-right-side {
+  margin-left: 120px;
+}
 
 .footer-section {
   background-color: var(--dark-color);
@@ -369,6 +439,29 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
+.footer-section .team-social-list {
+  margin-top: 8px;
+}
+
+.footer-section .team-social-item {
+}
+
+.footer-section .team-social-link {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-section .team-social-svg {
+  fill: var(--light-color);
 }
 
 /* ======================= /Footer section ========================== */
