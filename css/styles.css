@@ -428,6 +428,10 @@ img {
   gap: 24px;
 }
 
+.customers-section .section-title {
+  line-height: 1.1;
+}
+
 .customers-item {
   flex-basis: calc((100% - 120px) / 6);
   height: 88px;
@@ -444,9 +448,10 @@ img {
   color: #afb1b8;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--link-active-color);
+  color: var(--link-active-color);
 }
 
 .customers-svg {
@@ -455,9 +460,9 @@ img {
   fill: currentColor;
 }
 
-.customers-item:hover .customers-svg,
-.customers-item:focus .customers-svg {
-  fill: var(--link-active-color);
+.customers-link:hover .customers-svg,
+.customers-link:focus .customers-svg {
+  fill: currentColor;
 }
 
 /* ======================= Customers section ========================== */
@@ -467,11 +472,12 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 
-.footer-right-side {
+/* .footer-right-side {
   margin-left: 120px;
-}
+} */
 
 .footer-section {
   background-color: var(--dark-color);
@@ -506,14 +512,15 @@ img {
 }
 
 .footer-section .team-social-link {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #4d5ae5;
 }
 
 .footer-section .team-social-svg {
   fill: var(--light-color);
 }
 
-.footer-section .team-social-link:hover {
+.footer-section .team-social-link:hover,
+.footer-section .team-social-link:focus {
   background-color: #31d0aa;
 }
 
