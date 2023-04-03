@@ -117,6 +117,8 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-section-container {
@@ -185,11 +187,14 @@ img {
   /* background-color: var(--dark-color); */
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/hero/bg.jpg');
-  background-size: 1440px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-wraper {
@@ -251,8 +256,11 @@ img {
 .about-svg-wraper {
   background: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px;
+  height: 112px;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-svg {
@@ -314,7 +322,7 @@ img {
 .team-social-list {
   margin-top: 8px;
   display: flex;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -332,7 +340,7 @@ img {
 }
 
 .team-social-svg {
-  fill: var(--white-color);
+  fill: var(--light-color);
 }
 
 .team-social-link:hover,
@@ -392,8 +400,12 @@ img {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link {
+  display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -417,11 +429,19 @@ img {
 }
 
 .customers-item {
-  flex-basis: 168px;
+  flex-basis: calc((100% - 120px) / 6);
+  height: 88px;
+}
 
+.customers-link {
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
 }
 
 .customers-item:hover,
@@ -432,7 +452,7 @@ img {
 .customers-svg {
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .customers-item:hover .customers-svg,
@@ -446,6 +466,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-right-side {
@@ -473,10 +494,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 16px;
 }
 
 .footer-section .team-social-list {
   margin-top: 8px;
+  gap: 16px;
 }
 
 .footer-section .team-social-item {
